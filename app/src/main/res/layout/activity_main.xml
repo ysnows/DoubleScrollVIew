@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+
+    <ysnow.ysnowsslidingmenu.SlidingMenu
+        android:id="@+id/expanded_menu"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ysnow.ysnowsslidingmenu.YsnowScrollViewPageOne
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ripple_material_dark"
+            android:scrollbars="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@mipmap/a"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1400dp"
+                    />
+
+            </LinearLayout>
+
+
+        </ysnow.ysnowsslidingmenu.YsnowScrollViewPageOne>
+
+            <ysnow.ysnowsslidingmenu.YsnowWebView
+                android:id="@+id/ysnowswebview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                </ysnow.ysnowsslidingmenu.YsnowWebView>
+
+        </LinearLayout>
+
+        </ysnow.ysnowsslidingmenu.SlidingMenu>
+
+
+</RelativeLayout>

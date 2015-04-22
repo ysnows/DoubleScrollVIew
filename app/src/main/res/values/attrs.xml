@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingMenu">
+        <attr name="menuSpadding" format="dimension"></attr>
+    </declare-styleable>
+</resources>
