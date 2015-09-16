@@ -102,7 +102,7 @@ public class SlidingMenu  extends ScrollView  {
                 } else {
                     //隐藏菜单
                     this.smoothScrollTo(0, mScreenHeight);
-                    wrapperContent.loadUrl("http://m.cnblogs.com/");
+                    wrapperContent.loadUrl("https://github.com/ysnows");
                     this.setFocusable(false);
                     ispageOne=false;
                 }
@@ -113,7 +113,7 @@ public class SlidingMenu  extends ScrollView  {
                         ispageOne=true;
                     } else {
                         this.smoothScrollTo(0,mScreenHeight);
-                        wrapperContent.loadUrl("http://m.cnblogs.com/");
+                        wrapperContent.loadUrl("https://github.com/ysnows");
                     }
                 }
 
