@@ -7,7 +7,7 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ysnows.widget.DoubleScrollViewWrapper
+    <com.ysnows.doublescrollview.DoubleScrollViewWrapper
         android:id="@+id/wrapperview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +19,7 @@
             android:orientation="vertical"
         >
 
-            <ysnows.widget.PageOne
+            <com.ysnows.doublescrollview.PageOne
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/ripple_material_dark"
@@ -40,9 +40,9 @@
                 </LinearLayout>
 
 
-            </ysnows.widget.PageOne>
+            </com.ysnows.doublescrollview.PageOne>
 
-            <ysnows.widget.PageTwoScrollView
+            <com.ysnows.doublescrollview.PageTwoScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
             >
@@ -163,11 +163,11 @@
 
                 </LinearLayout>
 
-            </ysnows.widget.PageTwoScrollView>
+            </com.ysnows.doublescrollview.PageTwoScrollView>
 
         </LinearLayout>
 
-    </ysnows.widget.DoubleScrollViewWrapper>
+    </com.ysnows.doublescrollview.DoubleScrollViewWrapper>
 
 
 </FrameLayout>
