@@ -1,49 +1,62 @@
 package ysnow.ysnowsslidingmenu;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.Window;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+
+import ysnow.ysnowsslidingmenu.fragment.CommentFragment;
+import ysnow.ysnowsslidingmenu.fragment.ContentDetailFragment;
+import ysnow.ysnowsslidingmenu.fragment.GoodsDetailFragment;
 
 
-public class MainActivity extends ActionBarActivity {
-
-    private SlidingMenu slidingMenu;
+public class MainActivity extends AppCompatActivity {
+    private TabLayout tabs;
+    private ViewPager viewpager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-       slidingMenu= (SlidingMenu) findViewById(R.id.expanded_menu);
+
+        tabs = (TabLayout) findViewById(R.id.tabs);
+        viewpager = (ViewPager) findViewById(R.id.viewpager);
+        MinePagerAdapter minePagerAdapter = new MinePagerAdapter(getSupportFragmentManager());
+        viewpager.setOffscreenPageLimit(3);
+        viewpager.setAdapter(minePagerAdapter);
+        tabs.setupWithViewPager(viewpager);
+
     }
 
 
-    public void toggleMenu(View v) {
-        slidingMenu.toggleMenu();
-    }
+    /**
+     * ViewPager的PagerAdapter
+     */
+    public class MinePagerAdapter extends FragmentPagerAdapter {
+        Fragment[] fragments = new Fragment[]{GoodsDetailFragment.newInstance(), ContentDetailFragment.newInstance(), CommentFragment.newInstance()};
+        String[] titles = new String[]{"商品", "详情", "评价"};
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        public MinePagerAdapter(FragmentManager fm) {
+            super(fm);
         }
 
-        return super.onOptionsItemSelected(item);
+        @Override
+        public Fragment getItem(int position) {
+            return fragments[position];
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles[position];
+        }
+
+        @Override
+        public int getCount() {
+            return fragments.length;
+        }
     }
 }
+

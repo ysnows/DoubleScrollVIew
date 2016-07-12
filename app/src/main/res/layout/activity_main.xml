@@ -1,53 +1,29 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-     tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
 
-    <ysnow.ysnowsslidingmenu.SlidingMenu
-        android:id="@+id/expanded_menu"
-        android:scrollbars="none"
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:tabGravity="center"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/white">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
 
-        <ysnow.ysnowsslidingmenu.YsnowScrollViewPageOne
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/ripple_material_dark"
-            android:scrollbars="vertical"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@mipmap/a"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="1400dp"
-                    />
-
-            </LinearLayout>
+    </android.support.v4.view.ViewPager>
 
 
-        </ysnow.ysnowsslidingmenu.YsnowScrollViewPageOne>
-
-            <ysnow.ysnowsslidingmenu.YsnowWebView
-                android:id="@+id/ysnowswebview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                >
-                </ysnow.ysnowsslidingmenu.YsnowWebView>
-
-        </LinearLayout>
-
-        </ysnow.ysnowsslidingmenu.SlidingMenu>
-
-
-</RelativeLayout>
+</LinearLayout>
