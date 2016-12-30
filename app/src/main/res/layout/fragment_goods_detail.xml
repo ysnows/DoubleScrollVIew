@@ -1,173 +1,229 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="ysnow.ysnowsslidingmenu.fragment.GoodsDetailFragment">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ysnow.ysnowsslidingmenu.fragment.GoodsDetailFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <com.ysnows.doublescrollview.DoubleScrollViewWrapper
-        android:id="@+id/wrapperview"
+    <com.ysnows.doublescrollview.PageOne
+        android:id="@+id/pageOne"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        app:doublescrollviewwrapper_padding="48">
+        android:background="@color/ripple_material_dark"
+        android:scrollbars="vertical"
+        >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@mipmap/a"
             android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="1400dp" />
+
+        </LinearLayout >
+
+    </com.ysnows.doublescrollview.PageOne >
+
+    <com.ysnows.doublescrollview.PageTwoScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pageTwo"
+        app:layout_behavior="@string/pageTwoBehavior"
         >
 
-            <com.ysnows.doublescrollview.PageOne
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/ripple_material_dark"
-                android:scrollbars="vertical"
-                app:pageone_padding="48"
-            >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/a"
-                    android:orientation="vertical"
-                >
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="match_parent"
-                        android:layout_height="1400dp"/>
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
 
-                </LinearLayout>
-
-
-            </com.ysnows.doublescrollview.PageOne>
-
-            <com.ysnows.doublescrollview.PageTwoScrollView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-            >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                android:layout_height="10dp"
+                android:background="#211a21" />
 
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="90dp"
-                              android:background="#FF00FF"/>
-                    <TextView android:layout_width="match_parent"
-                              android:layout_height="10dp"
-                              android:background="#211a21"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
 
-                </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
 
-            </com.ysnows.doublescrollview.PageTwoScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
 
-        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
 
-    </com.ysnows.doublescrollview.DoubleScrollViewWrapper>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
 
-</FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF00FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#211a21" />
+
+        </LinearLayout >
+
+    </com.ysnows.doublescrollview.PageTwoScrollView >
+
+</android.support.design.widget.CoordinatorLayout >

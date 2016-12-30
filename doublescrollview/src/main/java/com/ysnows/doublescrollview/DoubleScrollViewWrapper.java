@@ -48,6 +48,8 @@ public class DoubleScrollViewWrapper extends ScrollView {
         int padding = a.getInteger(R.styleable.DoubleScrollViewWrapper_doublescrollviewwrapper_padding, 0);
         heitht = UiUtils.getScreenHeight(context) - UiUtils.getStatusBarHeight(context) - UiUtils.dp2px(context, padding);
         a.recycle();
+
+
     }
 
 
@@ -84,13 +86,6 @@ public class DoubleScrollViewWrapper extends ScrollView {
         }
     }
 
-    @Override
-    protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        super.onLayout(changed, l, t, r, b);
-        if (changed) {
-            this.scrollTo(0, 0);
-        }
-    }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
