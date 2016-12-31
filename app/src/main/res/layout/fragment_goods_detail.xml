@@ -24,10 +24,11 @@
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:src="@mipmap/a"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@mipmap/a" />
 
         </LinearLayout >
     </android.support.v4.widget.NestedScrollView >
