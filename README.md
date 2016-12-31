@@ -3,7 +3,7 @@
 ###简介
 通过behavior实现的类似京东淘宝商品详情页面的上拉下拉页面的切换效果。
 
-![DoubleScrollView](demo.gif)
+![DoubleScrollView](a.gif)
 
 	
 ### 用法
