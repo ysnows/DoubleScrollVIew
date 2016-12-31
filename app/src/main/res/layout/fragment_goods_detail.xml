@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="ysnow.ysnowsslidingmenu.fragment.GoodsDetailFragment" >
 
-    <com.ysnows.doublescrollview.PageOne
+    <android.support.v4.widget.NestedScrollView
         android:id="@+id/pageOne"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,13 +27,12 @@
                 android:layout_height="1400dp" />
 
         </LinearLayout >
+    </android.support.v4.widget.NestedScrollView >
 
-    </com.ysnows.doublescrollview.PageOne >
-
-    <com.ysnows.doublescrollview.PageTwoScrollView
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/pageTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pageTwo"
         app:layout_behavior="@string/pageTwoBehavior"
         >
 
@@ -224,6 +223,6 @@
 
         </LinearLayout >
 
-    </com.ysnows.doublescrollview.PageTwoScrollView >
+    </android.support.v4.widget.NestedScrollView >
 
 </android.support.design.widget.CoordinatorLayout >
