@@ -4,3 +4,8 @@
 /.idea/libraries
 .DS_Store
 /build
+.idea
+/gradle
+.idea/misc.xml
+/DoubleScrollVIew.iml
+/doublescrollview/doublescrollview.iml
