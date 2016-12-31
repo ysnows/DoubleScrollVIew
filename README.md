@@ -4,7 +4,8 @@
 通过behavior实现的类似京东淘宝商品详情页面的上拉下拉页面的切换效果。
 
 ![DoubleScrollView](a.gif)
-
+### 测试apk
+ [demo.apk](demo.apk)
 	
 ### 用法
 1. 依赖doublescrollview library模块或者直接拷贝PageBehavior和res文件下的文件到项目中。
