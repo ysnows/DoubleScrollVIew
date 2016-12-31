@@ -104,7 +104,7 @@
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="design-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="nineoldandroids-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="banner-1.4.8" level="project" />
     <orderEntry type="library" exported="" name="transition-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-compat-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-25.1.0" level="project" />
@@ -114,6 +114,7 @@
     <orderEntry type="library" exported="" name="support-media-compat-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-25.1.0" level="project" />
+    <orderEntry type="library" exported="" name="glide-3.7.0" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-25.1.0" level="project" />
     <orderEntry type="module" module-name="doublescrollview" exported="" />

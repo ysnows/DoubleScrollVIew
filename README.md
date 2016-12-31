@@ -11,6 +11,9 @@
 2. 为coordinatelayout中的作为第二页的组件添加 behavior属性为pagehebavior即可。
 3. 具体设置见demo。
 
+### demo引用库
+1. [banner](https://github.com/youth5201314/banner):Android广告图片轮播控件，支持无限循环和多种主题，可以灵活设置轮播样式、动画、轮播和切换时间、位置、图片加载框架等
+
 
 ### 参考文章
 1. [使用 CoordinatorLayout 实现复杂联动效果](http://www.jianshu.com/p/7f50faa65622)
