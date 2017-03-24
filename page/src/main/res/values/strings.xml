@@ -1,0 +1,4 @@
+<resources >
+    <string name="app_name" >page</string >
+    <string name="pageBehavior" translatable="false" >com.ysnows.page.PageBehavior</string >
+</resources >

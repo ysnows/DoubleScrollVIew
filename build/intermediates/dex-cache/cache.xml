@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/541a01fd13db3bfa61d3c1c8179777fc48b06e89/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_75ca963c94c940e41bc672138ff16f99839575e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/f7f88ffad0c8200e734ba556d90a9ff6f8a7c913/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_76f9e39c4d3a2b1a32e881cb7eb8bb400c98df2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/deee4aa4a53dad007b2ef726d4bf31df9c74ab69/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_d43a0f48773d46aea4db3919e0b8f2d56dd5c576.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/dcd555156831aba06f535650691fc74a1fc6f848/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_7d3c576e581f4322f4b523bb7dd099905c11f875.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/page/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="35471796c4e378cb41280980e1bbc328a5ffe5b6">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_0b7e0c3a087758c45e06266211e594030f71b120.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/83176fd8eb4e7d1bc49e43d919df0b04a9a182d3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_24c1ab687438609c5803e56de15404814b24db92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/c4b365dad31c0733654ff2905630d86512e27e2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_1bee0832613c158370367b1635eb85134b5a3e78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/17ce0d4f95ee108eadfe4954e367066e7b745fdf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86c62d01a8ee039fc5f629a34d15de8bf275b5db">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_a8f5ebcf102ac88057c469ce49a1e7101af474dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/a2b9e66683c4de730fe1fdd55e208d2f1e94c6a9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_9de9d03a654cc144e65984f3c6a404b676c9c690.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/87d0f2dce11f2844dbfd0f7512de32ea9af472b9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_84924e78c0cf68bfb892a3a316570c296ec17028.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/d5ce06960bb44f41f39bbc62bf04d835454676d5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_f219dcbecaec79f6f8afe0dee9f611e66e691eab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/c28a3c7e5bc924e985e001c8f5a70c65e7ee9bdf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_73a06bacbc444bd24d6f65c663415ab79043f450.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/1e17a447d10285c832e17341e0ff248c98172a41/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_53e23d14462ad121a158766e8c91eea37a7840d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xianguangjin/.android/build-cache/149d41ef6b787b058120ea3c6c436f12fada2e50/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/xianguangjin/Downloads/DoubleScrollVIew-master/app/build/intermediates/pre-dexed/debug/classes_5f981e97407166cec889a77467201d3434dfe28f.jar" />
+    </item>
+
+</items>

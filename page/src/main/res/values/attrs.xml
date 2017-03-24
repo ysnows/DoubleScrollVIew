@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DoubleScrollViewWrapper">
+        <attr name="doublescrollviewwrapper_padding" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Page">
+        <attr name="pageone_padding" format="integer"></attr>
+    </declare-styleable>
+</resources>
