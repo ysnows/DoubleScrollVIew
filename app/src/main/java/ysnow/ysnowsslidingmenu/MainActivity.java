@@ -10,7 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import ysnow.ysnowsslidingmenu.fragment.CommentFragment;
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabs;
     private ViewPager viewpager;
     private Toolbar toolbar;
+    private MinePagerAdapter minePagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar.setNavigationIcon(R.mipmap.arrowback);
 
-        MinePagerAdapter minePagerAdapter = new MinePagerAdapter(getSupportFragmentManager());
+        minePagerAdapter = new MinePagerAdapter(getSupportFragmentManager());
         viewpager.setOffscreenPageLimit(3);
         viewpager.setAdapter(minePagerAdapter);
         tabs.setupWithViewPager(viewpager);
@@ -74,8 +75,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==R.id.action_toggle){
+            if (minePagerAdapter.getItem(0) instanceof GoodsDetailFragment){
+                ((GoodsDetailFragment) minePagerAdapter.getItem(0)).toggle();
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
 
