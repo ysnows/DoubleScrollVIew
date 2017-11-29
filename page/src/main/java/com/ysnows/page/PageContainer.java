@@ -25,7 +25,13 @@ public class PageContainer extends CoordinatorLayout implements Page.OnScrollLis
     public PageContainer(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
+    public void setOnPageChanged(
+            PageBehavior.OnPageChanged onPageChanged) {
+        if (behavior != null) {
+            behavior.setOnPageChanged(onPageChanged);
 
+        }
+    }
 
     @Override
     public void onScroll(float scrollY, float distance) {
@@ -61,5 +67,17 @@ public class PageContainer extends CoordinatorLayout implements Page.OnScrollLis
             behavior = (PageBehavior) layoutParams.getBehavior();
         }
 
+    }
+
+    public void backToTop(){
+        if (behavior!=null){
+            behavior.backToTop();
+        }
+    }
+
+    public void scrollToBottom(){
+        if (behavior!=null){
+            behavior.scrollToBottom();
+        }
     }
 }

@@ -17,7 +17,7 @@ import java.lang.ref.WeakReference;
 public class PageBehavior extends CoordinatorLayout.Behavior {
     private static final int PAGE_ONE = 1;
     private static final int PAGE_TWO = 2;
-    private WeakReference<View> dependentView;
+    private WeakReference<View> dependentView,childView;
     private Scroller scroller;
     private Handler handler;
     private int status = PAGE_ONE;//记录状态
@@ -25,6 +25,14 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
     private int totalOne = 0;
     private int scrollY = 0;
     private int mode = 0;
+
+    public OnPageChanged mOnPageChanged;
+
+    public void setOnPageChanged(
+            OnPageChanged onPageChanged) {
+        mOnPageChanged = onPageChanged;
+    }
+
 
     public PageBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -38,6 +46,7 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
         //设定依赖视图为id是R.id.pageOne的View
         if (dependency.getId() == R.id.pageOne) {
             dependentView = new WeakReference<>(dependency);
+            childView=new WeakReference<>(child);
             return true;
         }
         return false;
@@ -106,6 +115,9 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
                 if (translationY < -gap) {
                     scroller.startScroll(0, (int) translationY, 0, (int) (-dependentView.getMeasuredHeight() - translationY));
                     status = PAGE_TWO;
+                    if (mOnPageChanged!=null){
+                        mOnPageChanged.toBottom();
+                    }
                 } else {
                     scroller.startScroll(0, (int) translationY, 0, (int) (-translationY));
                 }
@@ -114,6 +126,9 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
                 if (scrollY < -gap) {
                     scroller.startScroll(0, scrollY, 0, -dependentView.getMeasuredHeight() - scrollY);
                     status = PAGE_TWO;
+                    if (mOnPageChanged!=null){
+                        mOnPageChanged.toBottom();
+                    }
                 } else {
                     scroller.startScroll(0, scrollY, 0, -scrollY);
                 }
@@ -126,6 +141,9 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
                 } else {
                     scroller.startScroll(0, (int) translationY, 0, (int) (-translationY));
                     status = PAGE_ONE;
+                    if (mOnPageChanged!=null){
+                        mOnPageChanged.toTop();
+                    }
                 }
             } else {
                 mode = 0;
@@ -134,6 +152,9 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
                 } else {
                     scroller.startScroll(0, scrollY, 0, -scrollY);
                     status = PAGE_ONE;
+                    if (mOnPageChanged!=null){
+                        mOnPageChanged.toTop();
+                    }
                 }
             }
         }
@@ -163,4 +184,47 @@ public class PageBehavior extends CoordinatorLayout.Behavior {
         this.scrollY = scrollY;
     }
 
+    public void backToTop(){
+        
+        View dependentView = getDependentView();
+        float translationY = dependentView.getTranslationY();
+        if (status == PAGE_TWO) {
+            if (mode == 0) {
+                childView.get().setScrollY(0);
+                dependentView.setScrollY(0);
+                scroller.startScroll(0, (int) translationY, 0, (int) (-translationY));
+                status = PAGE_ONE;
+                if (mOnPageChanged!=null){
+                    mOnPageChanged.toTop();
+                }
+            }
+        }
+
+        handler.post(new Running());
+    }
+
+
+    public void scrollToBottom(){
+        View dependentView = getDependentView();
+        float translationY = dependentView.getTranslationY();
+        dependentView.setScrollY(dependentView.getMeasuredHeight());
+        if (status == PAGE_ONE) {
+            if (mode == 0) {
+                    scroller.startScroll(0, (int) translationY, 0, (int) (-dependentView.getMeasuredHeight() - translationY));
+                    status = PAGE_TWO;
+                    if (mOnPageChanged!=null){
+                        mOnPageChanged.toBottom();
+                    }
+                }
+            }
+
+        handler.post(new Running());
+    }
+
+    public interface OnPageChanged{
+        
+        void  toTop();
+        
+        void  toBottom();
+    }
 }
